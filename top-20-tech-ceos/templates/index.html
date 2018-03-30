@@ -1,0 +1,17 @@
+<title> Top 20 </title>
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>The 20 Highest Paid Tech CEOs in 2017</h1>
+
+<p>How much do they make? <br> Who's paying them?<br>Click on each name to learn more</p>
+
+    <ol>
+    {% for pair in pairs %}
+        <li><a href="/ceo/{{ pair[0] }}">{{ pair[1] }}</a></li>
+    {% endfor %}
+  </ol>
+
+{% endblock %}

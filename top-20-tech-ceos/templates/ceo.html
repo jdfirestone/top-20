@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+	<h1>#{{ ceo['number'] }} {{ ceo['name'] }}</h1>
+
+
+	<p>{{ ceo['name'] }}, {{ ceo['age'] }} is the CEO of {{ ceo['company'] }} and earns an annual salary of {{ ceo['salary'] }} dollars.</p>
+
+
+	<p><a href="{{ url_for('index') }}">Return to the top 20 list</a></p>
+{% endblock %}
